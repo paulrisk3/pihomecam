@@ -1,0 +1,11 @@
+[Unit]
+Description=RPI Security Camera
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/pihomecam/pihomecam.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
