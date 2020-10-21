@@ -7,7 +7,7 @@ Install necessary packages:\
   <code>sudo apt-get install python-picamera python3-picamera</code>
   
 Clone pihomecam and test web stream:\
-  <code> git clone https://github.com/swoffish/pihomecam.git </code>\
+  <code> git clone https://github.com/paulrisk3/pihomecam.git </code>\
   <code> cd pihomecam </code>\
   <code> sudo python pihomecam.py </code>
   
