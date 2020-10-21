@@ -12,18 +12,6 @@ from threading import Condition
 import BaseHTTPServer as server
 import base64
 
-PAGE="""\
-<html>
-<head>
-<title>Pi Home Camera</title>
-</head>
-<body>
-<center><h1>Camera Numero Uno</h1></center>
-<center><img src="stream.mjpg" width="640" height="480"></center>
-</body>
-</html>
-"""
-
 class StreamingOutput(object):
     def __init__(self):
         self.frame = None
@@ -43,18 +31,7 @@ class StreamingOutput(object):
 
 class StreamingHandler(server.BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path == '/':
-            self.send_response(301)
-            self.send_header('Location', '/index.html')
-            self.end_headers()
-        elif self.path == '/index.html':
-            content = PAGE.encode('utf-8')
-            self.send_response(200)
-            self.send_header('Content-Type', 'text/html')
-            self.send_header('Content-Length', len(content))
-            self.end_headers()
-            self.wfile.write(content)
-        elif self.path == '/stream.mjpg':
+        if self.path == '/stream.mjpg':
             self.send_response(200)
             self.send_header('Age', 0)
             self.send_header('Cache-Control', 'no-cache, private')
@@ -84,11 +61,10 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     allow_reuse_address = True
     daemon_threads = True
 
-with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
+with picamera.PiCamera(resolution='1600x900', framerate=30) as camera:
     #TODO: setup optional authentication 
     output = StreamingOutput()
-    #Uncomment the next line to change your Pi's Camera rotation (in degrees)
-    camera.rotation = 180
+    #camera.rotation = 180
     camera.start_recording(output, format='mjpeg')
     try:
         address = ('', 8000)
