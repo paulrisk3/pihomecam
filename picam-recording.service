@@ -1,10 +1,10 @@
 [Unit]
-Description=RPI Surveillance Camera
+Description=RPI Security Camera
 After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python /home/pi/pihomecam/pihomecam.py
+ExecStart=/usr/bin/python /home/pi/pihomecam/picam-recording.py
 Restart=on-abort
 
 [Install]
