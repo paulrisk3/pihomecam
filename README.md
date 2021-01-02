@@ -12,7 +12,7 @@ Clone pihomecam and test web stream:\
   <code> sudo python pihomecam.py </code>
   
 Open a browser and navigate to: <code> 127.0.0.1:8000 </code>\
-Can also be on a computer in your network and go to raspbery_pi_ip:8000 in a local broswer
+Can also be on a computer in your network and go to raspbery_pi_ip:8000/stream.mjpg in a local broswer
 
 
 
