@@ -1,5 +1,5 @@
 # pihomecam
-Quality, consistent video streaming from Pi camera over HTTP
+Quality, consistent video streaming from Pi 0 W camera over HTTP
 
 ## Getting Started
 
