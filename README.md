@@ -1,5 +1,5 @@
 # pihomecam
-Video streaming from Pi camera over HTTP
+Quality, consistent video streaming from Pi camera over HTTP
 
 ## Getting Started
 
@@ -31,6 +31,6 @@ This script was designed on a Pi 0 W using a Pi NoIR camera module. I found that
 * Protect against DDOS attacks
 * Provide authentication to access stream
 * Stream over HTTPS instead of HTTP?
-* Optimize video stream to reduce bandwith
+* Optimize video stream to reduce bandwith (currently transmits 2.0+ MB/s)
 
 For further learning and walkthroughs visit (where I learned most of the things I used): https://picamera.readthedocs.io/en/latest/quickstart.html
