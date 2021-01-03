@@ -22,7 +22,7 @@ Video streaming from Pi camera over HTTP
 * Verify functionality with <code>systemctl status pihomecam.service</code>
 
 ### Access Video Stream
-* On a web browser on the same network as the Pi Cam, navigate to '<PiCam IP>':8000/stream.mjpg
+* On a web browser on the same network as the Pi Cam, navigate to `<PiCam IP>`:8000/stream.mjpg
 
 ## To do
 
