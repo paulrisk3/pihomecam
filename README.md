@@ -10,6 +10,8 @@ Video streaming from Pi camera over HTTP
 <code>git clone https://github.com/paulrisk3/pihomecam.git</code>
 
 ## Usage
+
+### Run Camera
 * <code>cd pihomecam</code>
 * <code>sudo python pihomecam.py</code>
 
@@ -18,6 +20,9 @@ Video streaming from Pi camera over HTTP
 * <code>systemctl enable pihomecam.service</code>
 * <code>systemctl start pihomecam.service</code>
 * Verify functionality with <code>systemctl status pihomecam.service</code>
+
+### Access Video Stream
+* On a web browser on the same network as the Pi Cam, navigate to '<PiCam IP>':8000/stream.mjpg
 
 ## To do
 
