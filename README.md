@@ -4,7 +4,7 @@ Video streaming from Pi camera over HTTP
 ## Getting Started
 
 ### Prerequisites
-sudo apt-get install python-picamera python3-picamera
+<sudo apt-get install python-picamera python3-picamera>
 
 ### Installation
 git clone https://github.com/paulrisk3/pihomecam.git
