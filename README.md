@@ -25,7 +25,7 @@ Quality, consistent video streaming from Pi 0 W camera over HTTP
 * On a web browser on the same network as the Pi Cam, navigate to `<PiCam IP>`:8000/stream.mjpg
 
 ## Stability
-This script was designed on a Pi 0 W using a Pi NoIR camera module. I found that, after an undetermined length of running the camera module, the kernel would crash. After some reading, I found that this is an issue seemingly exclusive to the Pi 0 (W or not), and could possibly be mitigated by adding the line <code>over_voltage=6</code> in /boot/config.txt, giving a mild overclock to the single-core Pi CPU. This seems to be working, but just to be safe, I also add <code>kernel.panic=5</code> to /etc/sysctl.conf, to enable the Pi to reboot 5 seconds after a kernel panic event. Neither of these settings should void the warranty on your Pi, but I provide no guarantees to stability or long life for your hardware. 
+This script was designed on a Pi 0 W using a Pi NoIR camera module. I found that, after an undetermined length of running the camera module, the kernel would crash. After some reading, I found that this is an issue seemingly exclusive to the Pi 0 (W or not), and could possibly be mitigated by adding the line <code>over_voltage=6</code> in /boot/config.txt, giving a mild overclock to the single-core Pi CPU. This seems to be working, but just to be safe, I also add <code>kernel.panic=5</code> to /etc/sysctl.conf, to enable the Pi to reboot 5 seconds after a kernel panic event. Neither of these settings should void the warranty on your Pi, but I provide no guarantees regarding stability of longevity of your hardware. 
 
 ## To do
 * Protect against DDOS attacks
