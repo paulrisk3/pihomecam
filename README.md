@@ -10,15 +10,14 @@ Video streaming from Pi camera over HTTP
 <code>git clone https://github.com/paulrisk3/pihomecam.git</code>
 
 ## Usage
-<code>cd pihomecam</code>
-<code>sudo python pihomecam.py</code>
+* <code>cd pihomecam</code>
+* <code>sudo python pihomecam.py</code>
 
 ### Run as a Service (run at startup)
-<code>cp pihomecam.service /etc/systemd/system/</code>
-<code>systemctl enable pihomecam.service</code>
-<code>systemctl start pihomecam.service</code>
-
-Verify functionality with <code>systemctl status pihomecam.service</code>
+* <code>cp pihomecam.service /etc/systemd/system/</code>
+* <code>systemctl enable pihomecam.service</code>
+* <code>systemctl start pihomecam.service</code>
+* Verify functionality with <code>systemctl status pihomecam.service</code>
 
 ## To do
 
