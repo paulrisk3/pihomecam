@@ -1,7 +1,28 @@
 # pihomecam
-web browser streaming of a raspberry pi camera
+Video streaming from Pi camera over HTTP
 
+## Getting Started
 
+### Prerequisites
+sudo apt-get install python-picamera python3-picamera
+
+### Installation
+git clone https://github.com/paulrisk3/pihomecam.git
+
+## Usage
+cd pihomecam
+sudo python pihomecam.py
+
+### Run as a Service (run at startup)
+cp pihomecam.service /etc/systemd/system/
+systemctl enable pihomecam.service
+systemctl start pihomecam.servic
+
+Verify with systemctl status pihomecam.service
+
+## To do
+
+## Old Readme
 Install necessary packages:\
   <code> sudo apt-get update </code>\
   <code>sudo apt-get install python-picamera python3-picamera</code>
